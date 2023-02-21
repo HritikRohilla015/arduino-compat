@@ -111,13 +111,13 @@ typedef uint8_t byte;
 void pinMode(uint8_t pin, uint8_t mode);
 void digitalWrite(uint8_t pin, uint8_t val);
 int digitalRead(uint8_t pin);
-#ifdef TODO
+// #ifdef TODO
 int analogRead(uint8_t pin);
 void analogReference(uint8_t mode);
 void analogWrite(uint8_t pin, int val);
 void analogWriteFreq(uint32_t freq);
 void analogWriteRange(uint32_t range);
-#endif
+// #endif
 
 unsigned long millis(void);
 unsigned long micros(void);
@@ -125,13 +125,13 @@ void delay(unsigned int ms);
 void delayMicroseconds(unsigned int us);
 void yield(void);
 
-#ifdef TODO
+// #ifdef TODO
 void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
 uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder);
 
 void attachInterrupt(uint8_t pin, void (*)(void), int mode);
 void detachInterrupt(uint8_t pin);
-#endif
+// #endif
 
 void interrupts(void);
 void noInterrupts(void);
